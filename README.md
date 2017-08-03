@@ -63,6 +63,7 @@ To create an internal link (from one PressBook page to another page in the same 
 But on my self-hosted PressBooks sites, each book is created as a **subdirectory**, where the title appears after the primary URL, like this: http://ontheline.trincoll.edu/book/
 
 Create internal links using the Text editor tab (not the Visual editor) to insert an href tag in these formats:
+
 ```
 <a href="/book/front-matter/introduction/"> jump to introduction</a>
 
@@ -78,6 +79,7 @@ If your book is divided into parts, then readers of the web edition normally wil
 First, install the List Category Posts plugin for WordPress https://wordpress.org/plugins/list-category-posts/
 
 Second, for each part of the book, insert a version of this code in the text editor, which displays only in the web version. The post_parent must be individually set to the post number of each specific part, shown in its url.
+
 ```
 <div class="web-only">
 Chapters include:
@@ -106,7 +108,9 @@ STATIC IMAGE CODE HERE
 Insert HTML LINK with TEXT that will appear in all editions, so that readers of pdf/epub/mobi editions can click to go to the dynamic web version. INSERT SOURCE CREDIT, with optional [footnote]Note.[/footnote]
 </div>
 ```
+
 ### Example of an embedded iframe of an interactive map on GitHub Pages
+
 ```
 <div id="homevalue" class="textbox shaded">
 <div class="web-only">
@@ -119,7 +123,9 @@ Insert HTML LINK with TEXT that will appear in all editions, so that readers of 
 Follow the money in <a href="https://jackdougherty.github.io/otl-home-value/index-frame.html">this interactive map</a> as the most valuable single-family homes (in dark green) shifted from the capital city to selected suburbs over time. Click the tabs or use arrow keys to advance years. Hover over towns for details. Home values have been indexed (where county average = 1.0) to adjust for rising prices over time. Missing values appear in gray. View <a href="https://github.com/jackdougherty/otl-home-value">source data</a> for 1910-1980 from Connecticut Tax Commissioner, author's calculation of average dwelling value from equalized assessments; 1990 from Capital Region Council of Governments, median single-family home sales price; 2000-10 from State of Connecticut, Office of Policy and Management, average single-family home sales price (2000-2010). Learn more in Backstory: Calculating Wealth and Poverty in Past and Present, **to come** in this volume.[footnote]“Home Value Index in Hartford County, CT, 1910-2010,” 2016, https://jackdougherty.github.io/otl-home-value/index-frame.html.[/footnote]
 </div>
 ```
+
 ### Example of an embedded iframe of a Google Book
+
 ```
 <div id="scribners" class="textbox shaded">
 <div class="web-only">
@@ -130,6 +136,7 @@ Follow the money in <a href="https://jackdougherty.github.io/otl-home-value/inde
 <a href="https://books.google.com/books?id=2q_PAAAAMAAJ&amp;pg=PA1#v=onepage&amp;q&amp;f=false"> <em>Scribner's Monthly in 1876</em></a> declared Hartford as the richest city in the United States, relative to its population. Digitized by Google Books.[footnote]Charles H. Clark, “The Charter Oak City,” <em>Scribner’s Monthly</em> 13, no. 1 (November 1876): 1–21, https://books.google.com/books?id=2q_PAAAAMAAJ&amp;pg=PA1#v=onepage&amp;q&amp;f=false.[/footnote]
 </div>
 ```
+
 ### Example of an embedded Vimeo (use the Vimeo embed code)
 
 ```
@@ -166,9 +173,11 @@ Explanatory text
 To embed a brief line of code in PressBooks, without it being executed or processed by the browser, follow guidelines in this WordPress Codex: https://codex.wordpress.org/Writing_Code_in_Your_Posts
 
 In the Text editor, wrap the HTML character entities for your line of code inside a div class = textbox and code tags, in this format:
+
 ```
 <div class="textbox"><code> &lt; a href="/book/chapter/internal-link-test"&gt; text of link &lt;/a&gt;</code></div>
 ```
+
 which will display in Web/Epub/Mobi/PDF via Prince editions as a line of code inside a box, similar to this:
 
 ```
@@ -182,14 +191,19 @@ To embed several lines of non-executed code inside PressBooks, the best and simp
 - Install the oEmbed WordPress plugin in a self-hosted PressBooks site: https://wordpress.org/plugins/oembed-gist/
 - Create a free GitHub Gist account to store lines of sample code: https://gist.github.com
 - To display several lines of Gist code in PressBooks, copy and paste the Gist permanlink directly into PressBooks, like this:
+
 ```
 https://gist.github.com/JackDougherty/b4ccef475f78a6250c98
 ```
+
 To display a specific file within a Gist, follow steps above, then right-click to copy the permalink of the file, and paste it directly into PressBooks, where it will appear with a "#file" prefix and underscore (in place of the period), like this:
+
 ```
 https://gist.github.com/JackDougherty/8e14be951eac396801a8#file-sample-multi-file-subfile-html
 ```
+
 Since these Gist oEmbeds do not display properly in PressBooks PDF editions, wrap these URLs inside a not-PDF div tag, and add an explanatory note inside a pdf-only div tag, like this:
+
 ```
 <div class="not-pdf">
 https://gist.github.com/JackDougherty/b4ccef475f78a6250c98
@@ -198,10 +212,12 @@ https://gist.github.com/JackDougherty/b4ccef475f78a6250c98
 <a href="https://gist.github.com/JackDougherty/b4ccef475f78a6250c98">View code on GitHub Gist</a>
 </div>
 ```
+
 **TO DO**: Fix the cause of the validation error generated by the oEmbed Gist code above:
 ERROR: /var/www/pressbookstest/wp-content/uploads/sites/22/exports/book-1441138153.epub/OEBPS/chapter-001-internal-link-test.html(14,82): element "script" missing required attribute "type"
 
 #### OLD deprecated notes about analytics tracking in PB Textbook (before mid-2016)
+
 ```
 // for Google Analytics (classic), change to:
 // $tracking = "_gaq.push(['_trackEvent','exportFiles','Downloads','{$file_class}']);";

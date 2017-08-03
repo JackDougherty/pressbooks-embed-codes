@@ -98,7 +98,7 @@ This method embeds a dynamic iframe (for interactive maps, documents, videos, et
 <div id="INSERT NAME" class="textbox shaded">
 <div class="web-only">
 <h2>Explore/Watch/Listen to the Map/Source/Video/Audio: Title for readers of web edition </h2>
-[iframe src=“http://INSERT-YOUR-URL” width=“100%” height="500”]
+[iframe src=“https://INSERT-YOUR-URL” width=“100%” height="500”]
 </div>
 <div class="not-web">
 STATIC IMAGE CODE HERE
@@ -106,38 +106,39 @@ STATIC IMAGE CODE HERE
 Insert HTML LINK with TEXT that will appear in all editions, so that readers of pdf/epub/mobi editions can click to go to the dynamic web version. INSERT SOURCE CREDIT, with optional [footnote]Note.[/footnote]
 </div>
 ```
-Example of an embedded iframe of an interactive map on GitHub Pages
+### Example of an embedded iframe of an interactive map on GitHub Pages
 ```
 <div id="homevalue" class="textbox shaded">
 <div class="web-only">
 <h2>Explore the Map: Home Value Index in Hartford County, CT, 1910-2010</h2>
-[iframe src="http://jackdougherty.github.io/otl-home-value/index.html" width="100%" height=550]
+[iframe src="https://jackdougherty.github.io/otl-home-value/index.html" width="100%" height=550]
 </div>
 <div class="not-web">
-<a href="http://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2016/05/1910-2010-home-value.jpg" rel="attachment wp-att-167"><img src="http://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2016/05/1910-2010-home-value.jpg" alt="1910-2010-home-value" width="910" height="490" class="alignnone size-full wp-image-167" /></a>
+<a href="https://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2016/05/1910-2010-home-value.jpg" rel="attachment wp-att-167"><img src="https://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2016/05/1910-2010-home-value.jpg" alt="1910-2010-home-value" width="910" height="490" class="alignnone size-full wp-image-167" /></a>
 </div>
-Follow the money in <a href="http://jackdougherty.github.io/otl-home-value/index-frame.html">this interactive map</a> as the most valuable single-family homes (in dark green) shifted from the capital city to selected suburbs over time. Click the tabs or use arrow keys to advance years. Hover over towns for details. Home values have been indexed (where county average = 1.0) to adjust for rising prices over time. Missing values appear in gray. View <a href="http://github.com/jackdougherty/otl-home-value">source data</a> for 1910-1980 from Connecticut Tax Commissioner, author's calculation of average dwelling value from equalized assessments; 1990 from Capital Region Council of Governments, median single-family home sales price; 2000-10 from State of Connecticut, Office of Policy and Management, average single-family home sales price (2000-2010). Learn more in Backstory: Calculating Wealth and Poverty in Past and Present, **to come** in this volume.[footnote]“Home Value Index in Hartford County, CT, 1910-2010,” 2016, http://jackdougherty.github.io/otl-home-value/index-frame.html.[/footnote]
+Follow the money in <a href="https://jackdougherty.github.io/otl-home-value/index-frame.html">this interactive map</a> as the most valuable single-family homes (in dark green) shifted from the capital city to selected suburbs over time. Click the tabs or use arrow keys to advance years. Hover over towns for details. Home values have been indexed (where county average = 1.0) to adjust for rising prices over time. Missing values appear in gray. View <a href="https://github.com/jackdougherty/otl-home-value">source data</a> for 1910-1980 from Connecticut Tax Commissioner, author's calculation of average dwelling value from equalized assessments; 1990 from Capital Region Council of Governments, median single-family home sales price; 2000-10 from State of Connecticut, Office of Policy and Management, average single-family home sales price (2000-2010). Learn more in Backstory: Calculating Wealth and Poverty in Past and Present, **to come** in this volume.[footnote]“Home Value Index in Hartford County, CT, 1910-2010,” 2016, https://jackdougherty.github.io/otl-home-value/index-frame.html.[/footnote]
 </div>
 ```
-Example of an embedded iframe of a Google Book
+### Example of an embedded iframe of a Google Book
 ```
 <div id="scribners" class="textbox shaded">
 <div class="web-only">
 <h2>Explore the Source: Hartford, "The Richest City in the United States," 1876</h2>
-[iframe src="http://jackdougherty.github.io/otl-google-books-api/scribners-monthly-1876.html" width="100%" height=615]
+[iframe src="https://jackdougherty.github.io/otl-google-books-api/scribners-monthly-1876.html" width="100%" height=615]
 </div>
-<div class="not-web"><a href="http://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2016/01/1876ScribnersCover.png "><img src="http://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2016/01/1876ScribnersCover.png" alt="1876ScribnersCover" class="alignnone size-full wp-image-100" height="538" width="600" /></a></div>
+<div class="not-web"><a href="https://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2016/01/1876ScribnersCover.png "><img src="https://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2016/01/1876ScribnersCover.png" alt="1876ScribnersCover" class="alignnone size-full wp-image-100" height="538" width="600" /></a></div>
 <a href="https://books.google.com/books?id=2q_PAAAAMAAJ&amp;pg=PA1#v=onepage&amp;q&amp;f=false"> <em>Scribner's Monthly in 1876</em></a> declared Hartford as the richest city in the United States, relative to its population. Digitized by Google Books.[footnote]Charles H. Clark, “The Charter Oak City,” <em>Scribner’s Monthly</em> 13, no. 1 (November 1876): 1–21, https://books.google.com/books?id=2q_PAAAAMAAJ&amp;pg=PA1#v=onepage&amp;q&amp;f=false.[/footnote]
 </div>
 ```
-Example of an embedded Vimeo (use the Vimeo embed code)
+### Example of an embedded Vimeo (use the Vimeo embed code)
+
 ```
 <div id="2011-how-we-found-restrictive-covenants" class="textbox shaded">
 <div class="web-only">
 <h2>Watch the Video: How We Found Restrictive Covenants</h2>
 [iframe src="https://player.vimeo.com/video/220562166" width="100%" height=400 frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen]
 </div>
-<div class="not-web"><a href="http://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2017/06/2011-how-we-found-restrictive-covenants.png"><img src="http://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2017/06/2011-how-we-found-restrictive-covenants.png" alt="2011-how-we-found-restrictive-covenants" width="856" height="478" class="alignnone size-full wp-image-373" /></a></div>
+<div class="not-web"><a href="https://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2017/06/2011-how-we-found-restrictive-covenants.png"><img src="https://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2017/06/2011-how-we-found-restrictive-covenants.png" alt="2011-how-we-found-restrictive-covenants" width="856" height="478" class="alignnone size-full wp-image-373" /></a></div>
 Watch the <a href="https://vimeo.com/220562166">video</a> to learn how we found restrictive covenants.[footnote]Katie Campbell and Jack Dougherty, "How We Found Restrictive Covenants," 2017, https://vimeo.com/220562166.[/footnote]
 </div>
 ```
@@ -145,9 +146,10 @@ Watch the <a href="https://vimeo.com/220562166">video</a> to learn how we found 
 
 ## Embed scrollable PDF in web page with graceful fallback
 
--Install plugin https://wordpress.org/plugins/vanilla-pdf-embed/
--See sample HTML below. Insert pdf title to appear in graceful fallback for non-web versions
+- Install plugin https://wordpress.org/plugins/vanilla-pdf-embed/
+- See sample HTML below. Insert pdf title to appear in graceful fallback for non-web versions
 - Default width="100%" or adjust to pixels "500px"
+
 ```
 <div id="WHZoning1924" class="textbox shaded">
 <div class="web-only">
@@ -199,7 +201,7 @@ https://gist.github.com/JackDougherty/b4ccef475f78a6250c98
 **TO DO**: Fix the cause of the validation error generated by the oEmbed Gist code above:
 ERROR: /var/www/pressbookstest/wp-content/uploads/sites/22/exports/book-1441138153.epub/OEBPS/chapter-001-internal-link-test.html(14,82): element "script" missing required attribute "type"
 
-## OLD deprecated notes about analytics tracking in PB Textbook (before mid-2016)
+#### OLD deprecated notes about analytics tracking in PB Textbook (before mid-2016)
 ```
 // for Google Analytics (classic), change to:
 // $tracking = "_gaq.push(['_trackEvent','exportFiles','Downloads','{$file_class}']);";

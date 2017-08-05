@@ -31,14 +31,16 @@ Create internal links using the Text editor tab (not the Visual editor) to inser
 
 If your book is divided into parts, then readers of the web edition normally will encounter a blank page at the beginning of each part. While this blank page is fine for print/ebook editions, readers of web editions expect to see content, and this method efficiently delivers it to them.
 
-First, install the List Category Posts plugin for WordPress https://wordpress.org/plugins/list-category-posts/
+1) install the List Category Posts plugin for WordPress https://wordpress.org/plugins/list-category-posts/
 
-Second, for each part of the book, insert a version of this code in the text editor, which displays only in the web version. The post_parent must be individually set to the post number of each specific part, shown in its url.
+2) For each part of the book, insert a version of this code in the text editor, which displays only in the web version. The post_parent must be individually set to the post number of each specific part, shown in its url.
+
+3) This code displays chapter links in order of their "published" date, so edit the dates accordingly (August 1, August 2, August 3...) in each part
 
 ```
 <div class="web-only">
 Chapters include:
-[catlist post_type="chapter" post_parent=3 order=asc numberposts=-1]
+[catlist post_type="chapter" post_parent=46 orderby=date order=asc numberposts=-1]
 </div>
 ```
 

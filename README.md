@@ -44,9 +44,32 @@ Chapters include:
 </div>
 ```
 
-## Embed dynamic iframe and static image
+## Insert static image and link (not shaded)
+
+Use this method to insert a conventional static image and link. Use only a caption (with no title about user actions), and use a non-shaded textbox border (to distinguish from shaded for more interactive versions)
+
+### Generic static image
+
+```
+<div id="INSERT NAME" class="textbox">
+[iframe src=“https://INSERT-YOUR-URL” width=“100%” height="500”]
+Insert HTML LINK with TEXT that will appear in all editions, so that readers of pdf/epub/mobi editions can click to go to the dynamic web version. INSERT SOURCE CREDIT, with optional [footnote]Note.[/footnote]
+</div>
+```
+
+### Sample static image
+<div id="1937HOLCInhabitantsC10" class="textbox">
+<a href="http://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2016/01/1937HOLCInhabitantsC10.png"><img src="http://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2016/01/1937HOLCInhabitantsC10.png" alt="" width="731" height="103" class="alignnone size-full wp-image-49" /></a>
+This section of the <a href=https://github.com/JackDougherty/otl-redlining/blob/master/sources/holc-hartford-1937-appraisal.pdf>HOLC area descriptions form</a> required the appraiser to report the social composition of the neighborhood as a factor to measure mortgage risk. Source: Hartford area C-10, 1937, from the National Archives. [footnote]Home Owners’ Loan Corporation, “Residential Security Map and Area Descriptions, Hartford-West Hartford-East Hartford, Connecticut,” 1937, Record Group 195: Records of the Federal Home Loan Bank Board, Box 64, City Survey Files, National Archives II, College Park, Maryland, http://digitalrepository.trincoll.edu/cssp_archives/14/.[/footnote]
+</div>
+
+
+## Embed dynamic iframe and static image (shaded)
 
 This method embeds a dynamic iframe (for interactive maps, documents, videos, etc.) in the web edition, and parallel static image (such as a screenshot of the interactive content, plus a web link to it) in the pdf/epub/mobi editions. As a result, all editions of the book display some version of this visual content. The web edition is preferable because it embeds live interactive content directly into the web page. But the downloadable pdf/epub/mobi editions also display static images, with clickable links to the online version.
+
+- Web edition displays a title above the image, which cues readers to interact with the object
+- Shading also visually signals something special here, and covers up stray pixels
 
 - In a self-hosted PressBooks site, install iframe plugin: https://wordpress.org/plugins/iframe/
 - Upload a static image of the dynamic content (usually a screenshot of an interactive map or chart) to the PressBooks/WordPress media library.
@@ -122,7 +145,7 @@ Watch the <a href="https://vimeo.com/220562166">video</a> to learn how we found 
 <h2>Explore the Source: West Hartford Zoning Plan, 1924</h2>
 </div>
 [pdf title="1924 West Hartford Zoning Report from MAGIC UConn Libraries"]http://magic.lib.uconn.edu/magic_2/raster/37840/hdimg_37840_155_1924_unkn_CSL_1_p.pdf[/pdf]
-Explanatory text
+Insert HTML LINK with TEXT that will appear in all editions, so that readers of pdf/epub/mobi editions can click to go to the dynamic web version. INSERT SOURCE CREDIT, with optional [footnote]Note.[/footnote]
 </div>
 ```   
 

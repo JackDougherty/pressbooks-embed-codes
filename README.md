@@ -48,35 +48,36 @@ Chapters include:
 
 Use this method to insert a conventional static image and link. Use only a caption (with no title about user actions), and use a non-shaded textbox border (to distinguish from shaded for more interactive versions)
 
-### Generic static image
+### Generic static image and caption in non-shaded textbox
 
 ```
 <div id="INSERT NAME" class="textbox">
-[iframe src=“https://INSERT-YOUR-URL” width=“100%” height="500”]
+INSERT STATIC IMAGE LINK FROM PB
 Insert HTML LINK with TEXT that will appear in all editions, so that readers of pdf/epub/mobi editions can click to go to the dynamic web version. INSERT SOURCE CREDIT, with optional [footnote]Note.[/footnote]
 </div>
 ```
 
-### Sample static image
+### Sample static image and caption in non-shaded textbox
+
+```
 <div id="1937HOLCInhabitantsC10" class="textbox">
 <a href="http://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2016/01/1937HOLCInhabitantsC10.png"><img src="http://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2016/01/1937HOLCInhabitantsC10.png" alt="" width="731" height="103" class="alignnone size-full wp-image-49" /></a>
 This section of the <a href=https://github.com/JackDougherty/otl-redlining/blob/master/sources/holc-hartford-1937-appraisal.pdf>HOLC area descriptions form</a> required the appraiser to report the social composition of the neighborhood as a factor to measure mortgage risk. Source: Hartford area C-10, 1937, from the National Archives. [footnote]Home Owners’ Loan Corporation, “Residential Security Map and Area Descriptions, Hartford-West Hartford-East Hartford, Connecticut,” 1937, Record Group 195: Records of the Federal Home Loan Bank Board, Box 64, City Survey Files, National Archives II, College Park, Maryland, http://digitalrepository.trincoll.edu/cssp_archives/14/.[/footnote]
 </div>
+```
 
+## Embed dynamic iframe and static image, with title and caption, in shaded textbox
 
-## Embed dynamic iframe and static image (shaded)
+Use this method to embed a dynamic iframe (for interactive maps, documents, videos, etc.) in the web edition, and a parallel static image (such as a screenshot of the interactive content, plus a web link to it) in the pdf/epub/mobi editions.
 
-This method embeds a dynamic iframe (for interactive maps, documents, videos, etc.) in the web edition, and parallel static image (such as a screenshot of the interactive content, plus a web link to it) in the pdf/epub/mobi editions. As a result, all editions of the book display some version of this visual content. The web edition is preferable because it embeds live interactive content directly into the web page. But the downloadable pdf/epub/mobi editions also display static images, with clickable links to the online version.
+As a result, all editions of the book display some version of this visual content. The web edition is preferable because it embeds live interactive content directly into the web page. Also, the Web edition displays a title above the image, which cues readers to interact with the object. But the downloadable pdf/epub/mobi editions also display static images, with clickable links to the online version. All versions appear in a shaded textbox to draw the eye of the reader more than the non-shaded, non-interactive static images.
 
-- Web edition displays a title above the image, which cues readers to interact with the object
-- Shading also visually signals something special here, and covers up stray pixels
+1) In a self-hosted PressBooks site, install iframe plugin: https://wordpress.org/plugins/iframe/
+2) Upload a static image of the dynamic content (usually a screenshot of an interactive map or chart) to the PressBooks/WordPress media library.
+3) Insert the static image into the PressBooks page, as normal.
+4) In the Text editor tab (not the Visual editor), paste this **generic** code above and below the STATIC image code from the prior step, and modify the code and text to fit your needs.
 
-- In a self-hosted PressBooks site, install iframe plugin: https://wordpress.org/plugins/iframe/
-- Upload a static image of the dynamic content (usually a screenshot of an interactive map or chart) to the PressBooks/WordPress media library.
-- Insert the static image into the PressBooks page, as normal.
-- In the Text editor tab (not the Visual editor), paste this **generic** code above and below the STATIC image code from the prior step, and modify the code and text to fit your needs.
-
-### Generic sample embed
+### Generic interactive and static embed
 
 ```
 <div id="INSERT NAME" class="textbox shaded">
@@ -91,7 +92,7 @@ Insert HTML LINK with TEXT that will appear in all editions, so that readers of 
 </div>
 ```
 
-### Example of an embedded iframe of an interactive map on GitHub Pages
+### Example embedded interactive map iframe and static image
 
 ```
 <div id="homevalue" class="textbox shaded">
@@ -106,7 +107,7 @@ Follow the money in <a href="https://jackdougherty.github.io/otl-home-value/inde
 </div>
 ```
 
-### Example of an embedded iframe of a Google Book
+### Example of embedded Google Book iframe and static image
 
 ```
 <div id="scribners" class="textbox shaded">
@@ -119,7 +120,7 @@ Follow the money in <a href="https://jackdougherty.github.io/otl-home-value/inde
 </div>
 ```
 
-### Example of an embedded Vimeo (use the Vimeo embed code)
+### Example of Vimeo embed code and static image
 
 ```
 <div id="2011-how-we-found-restrictive-covenants" class="textbox shaded">
@@ -133,7 +134,7 @@ Watch the <a href="https://vimeo.com/220562166">video</a> to learn how we found 
 ```
 
 
-## Embed scrollable PDF in web page with graceful fallback
+### Embed scrollable PDF in web page with graceful fallback - TO DO: decide if static image is necessary
 
 - Install plugin https://wordpress.org/plugins/vanilla-pdf-embed/
 - See sample HTML below. Insert pdf title to appear in graceful fallback for non-web versions

@@ -134,24 +134,43 @@ Watch the <a href="https://vimeo.com/220562166">video</a> to learn how we found 
 ```
 
 
-### Embed scrollable PDF in web page with graceful fallback - TO DO: decide if static image is necessary
+### Generic version of scrollable PDF and static screenshot
 
 - Install plugin https://wordpress.org/plugins/vanilla-pdf-embed/
 - See sample HTML below. Insert pdf title to appear in graceful fallback for non-web versions
 - Default width="100%" or adjust to pixels "500px"
 
 ```
-<div id="WHZoning1924" class="textbox shaded">
+<div id="INSERT NAME" class="textbox shaded">
 <div class="web-only">
-<h2>Explore the Source: West Hartford Zoning Plan, 1924</h2>
+<h2>Explore the Source: Race and Class in the FHA Underwriting Manual, 1936 </h2>
+[pdf title="INSERT TITLE OF PDF"]
+INSERT LINK TO UPLOADED PDF IN MEDIA FOLDER[/pdf]
 </div>
-[pdf title="1924 West Hartford Zoning Report from MAGIC UConn Libraries"]http://magic.lib.uconn.edu/magic_2/raster/37840/hdimg_37840_155_1924_unkn_CSL_1_p.pdf[/pdf]
+<div class="not-web">
+STATIC IMAGE LINK
+</div>
 Insert HTML LINK with TEXT that will appear in all editions, so that readers of pdf/epub/mobi editions can click to go to the dynamic web version. INSERT SOURCE CREDIT, with optional [footnote]Note.[/footnote]
+</div>
+```
+
+### Example of scrollable PDF and static screenshot
+
+```
+<div id="1936FHA-Underwriting" class="textbox shaded">
+<div class="web-only">
+<h2>Explore the Source: Race and Class in the FHA Underwriting Manual, 1936 </h2>
+[pdf title="Rating of Location, Underwriting Manual, Federal Housing Administration, 1936"]http://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2017/08/1936FHA-Underwriting-excerpts.pdf[/pdf]
+</div>
+<div class="not-web">
+<a href="http://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2016/01/1936FHA-Underwriting-screenshot.png"><img src="http://ontheline.trincoll.edu/book/wp-content/uploads/sites/3/2016/01/1936FHA-Underwriting-screenshot.png" alt="" width="715" height="233" class="alignnone size-full wp-image-51" /></a>
+</div>
+The <a href='https://babel.hathitrust.org/cgi/pt?id=mdp.39015018409246;view=1up;seq=195'>1936 FHA Underwriting Manual</a> reduced a mortgage application location score where neighborhoods or schools might face changes in race or social class. Digitized by Google and HathiTrust.[footnote]Federal Housing Administration, <em>Underwriting Manual: Underwriting Analysis Under Title II, Section 203 of the National Housing Act.</em> (Washington, D.C.: US Government Printing Office, 1936), part II, sections 226-289, https://babel.hathitrust.org/cgi/pt?id=mdp.39015018409246;view=1up;seq=195.[/footnote]
 </div>
 ```   
 
 
-## Embed brief line of non-executed code
+### Embed brief line of non-executed code
 
 To embed a brief line of code in PressBooks, without it being executed or processed by the browser, follow guidelines in this WordPress Codex: https://codex.wordpress.org/Writing_Code_in_Your_Posts
 
@@ -167,7 +186,7 @@ which will display in Web/Epub/Mobi/PDF via Prince editions as a line of code in
 <a href="/book/chapter/internal-link-test"> text of link </a>
 ```
 
-## Embed longer non-executed code via Gist
+### Embed longer non-executed code via Gist
 
 To embed several lines of non-executed code inside PressBooks, the best and simplest solution is to embed it as a GitHub Gist. This looks good in the Web edition, with automatic fall-back links in the Epub/Mobi editions, but does NOT display in the PDF edition -- see more below).
 
